@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 grid = [[ 8,  2, 22, 97, 38, 15,  0, 40,  0, 75,  4,  5,  7, 78, 52, 12, 50, 77, 91,  8],
         [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48,  4, 56, 62,  0],
@@ -50,4 +50,4 @@ for i in range(len(grid)):
             if (j > 3):
                 if x < (grid[i][j] * grid[i+1][j-1] * grid[i+2][j-2] * grid[i+3][j-3]):
                     x = grid[i][j] * grid[i+1][j-1] * grid[i+2][j-2] * grid[i+3][j-3]
-print x
+print(x)

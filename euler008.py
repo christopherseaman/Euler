@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 s = ''
 s += '73167176531330624919225119674426574742355349194934'
@@ -30,4 +30,4 @@ for i in range(len(s)-14):
         t *= int(s[i+j])
     if t > max:
         max = t
-        print max
+        print(max)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import fractions as f
 
@@ -7,5 +7,5 @@ tiny = 1
 
 for i in range(max, 1, -1):
     if (tiny % i != 0):
-        print i, tiny, (tiny * i)#, math.gcd(tiny, i)
+        print(i, tiny, (tiny * i))#, math.gcd(tiny, i)
         tiny *= (i / f.gcd(tiny, i))

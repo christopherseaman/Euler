@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import math
 
 m = 0
@@ -10,7 +10,7 @@ for i in range(100, 1000):
             if (s[x] != s[len(s) - x - 1]):
                 break
             if x == (len(s) -1):
-                print s, s[x], s[len(s) - x - 1], x, i, j
+                print(s, s[x], s[len(s) - x - 1], x, i, j)
                 if int(s) > m:
                     m = int(s)
-print m
+print(m)

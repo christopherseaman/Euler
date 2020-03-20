@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 prime = [2]
 x = 3
@@ -17,5 +17,5 @@ while len(prime) < 10001:
         prime.append(x)
     x += 1
 
-print prime
-print prime[len(prime)-1]
+print(prime)
+print(prime[len(prime)-1])
