@@ -10,37 +10,37 @@
 # print(g.comb(40, 20))
 # > 137846528820
 
-# Let do an inefficient solution using recursion as well
-def walk(grid):
-    if(grid[0] == 0 or grid[1] == 0):
-        # reach an edge, only one way to go
-        return 1
-    else:
-        right = grid.copy()
-        right[0] -= 1
-        down = grid.copy()
-        down[1] -= 1
-        return walk(down) + walk(right)
+# Let do an inefficient solution using recursion
+# def walk(grid):
+#     if(grid[0] == 0 or grid[1] == 0):
+#         # reach an edge, only one way to go
+#         return 1
+#     else:
+#         right = grid.copy()
+#         right[0] -= 1
+#         down = grid.copy()
+#         down[1] -= 1
+#         return walk(down) + walk(right)
 
-len = 20
-square = [len, len]
-print(walk(square))
+# len = 15
+# square = [len, len]
+# print(walk(square))
 
 
 
 # A smarter way by combining numbers of paths from each child node
-# l=[]
-# for i in range(21):
-#        l.append([])
-#        for j in range(21):
-#               l[i].append(0)
+l=[]
+for i in range(21):
+       l.append([])
+       for j in range(21):
+              l[i].append(0)
               
-# for i in range(21):
-#        l[20][i]=1
-#        l[i][20]=1
+for i in range(21):
+       l[20][i]=1
+       l[i][20]=1
        
-# for i in range(19,-1,-1):
-#        for j in range(19,-1,-1):
-#               l[i][j]=l[i+1][j]+l[i][j+1]
+for i in range(19,-1,-1):
+       for j in range(19,-1,-1):
+              l[i][j]=l[i+1][j]+l[i][j+1]
               
-# print l[0][0]
+print(l[0][0])
