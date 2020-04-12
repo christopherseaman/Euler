@@ -44,5 +44,3 @@ for i in range(19,-1,-1):
               l[i][j]=l[i+1][j]+l[i][j+1]
               
 print(l[0][0])
-
-
