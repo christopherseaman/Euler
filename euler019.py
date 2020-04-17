@@ -14,3 +14,4 @@
 # Okay, for each year let's find how many days there are starting with the first Sunday and divide by seven
 # Jan 1, 1901 was a Tuesday
 
+# Nope, months are stupid and did this one on paper: 171
